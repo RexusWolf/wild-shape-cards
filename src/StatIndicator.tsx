@@ -14,7 +14,7 @@ export function StatIndicator({ value, label }: { value: number; label: string }
     }
   };
   return (
-    <div>
+    <div className={styles.statIndicator}>
       <p>{label}</p>
       <div>
         <div className={styles.statValueContainer}>
