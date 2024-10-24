@@ -1,0 +1,44 @@
+.challengeRating {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  padding: 1rem;
+  padding-top: 1.5rem;
+  min-width: 3.5rem;
+  aspect-ratio: 3 / 4;
+  color: white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.banner0 {
+  background-color: #cbb990;
+}
+
+.banner1_4 {
+  background-color: #c3c778;
+}
+
+.banner1_2 {
+  background-color: #78c77b;
+}
+
+.banner1 {
+  background-color: #78c7c7;
+}
+
+.banner2 {
+  background-color: #8c78c7;
+}
+
+.banner3 {
+  background-color: #c778be;
+}
+
+.banner4 {
+  background-color: #c77882;
+}
+
+.banner5 {
+  background-color: #c78a78;
+}
