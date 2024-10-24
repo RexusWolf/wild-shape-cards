@@ -1,14 +1,13 @@
 .statIndicator {
   display: flex;
   flex-direction: column;
-  text-align: center;
   gap: 0.2rem;
 }
 .statValueContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 3rem;
+  min-height: 2.5rem;
   aspect-ratio: 3 / 3;
   height: 50%;
   border-top-left-radius: 1rem;
@@ -20,7 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 3rem;
+  min-height: 2.5rem;
   aspect-ratio: 3 / 3;
   height: 50%;
   background-color: #fafafa;

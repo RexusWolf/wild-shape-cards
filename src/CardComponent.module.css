@@ -53,17 +53,31 @@
   color: black;
 }
 
-.stats {
+.allStats {
   display: flex;
   width: 100%;
+  gap: 1rem;
+}
+
+.abilityScores {
+  display: flex;
   justify-content: space-around;
+  width: 70%;
   gap: 0.5rem;
 }
 
 .armorAndHitPoints {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  width: 30%;
   gap: 0.5rem;
+}
+
+.hitPoints {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .basicValue {
@@ -71,8 +85,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
-  gap: 0.2rem;
-  width: 50%;
+  gap: 0.5rem;
   border-radius: 1rem;
   background-color: #f0efeb;
 }

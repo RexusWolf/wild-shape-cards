@@ -14,10 +14,12 @@ export const wildShapes = [
       { label: 'CAR', value: 10 },
     ],
     armorClass: 13,
-    hitPoints: '26 (4d10 + 4)',
+    hitPoints: '26 (4d10+4)',
     speed: '10 pies, 8 pies volando',
     senses: 'Percepción pasiva 14',
     skills: 'Percepción +4',
+    resistances: '',
+    languages: 'Entiende común y ariano, pero no puede hablar.',
     feats: [
       {
         name: 'Vista agudizada',
@@ -32,12 +34,12 @@ export const wildShapes = [
       {
         name: 'Pico',
         description:
-          'Ataque cuerpo a cuerpo con arma: +5 al ataque, alcance 5 pies, un objetivo. Impacto: 6 (1d6 + 3) puntos de daño perforante.',
+          'Ataque cuerpo a cuerpo con arma: +5 al ataque, alcance 5 pies, un objetivo. Impacto: 6 (1d6+3) puntos de daño perforante.',
       },
       {
         name: 'Garras',
         description:
-          'Ataque cuerpo a cuerpo con arma: +5 al ataque, alcance 5 pies, un objetivo. Impacto: 10 (2d6 + 3) puntos de daño cortante.',
+          'Ataque cuerpo a cuerpo con arma: +5 al ataque, alcance 5 pies, un objetivo. Impacto: 10 (2d6+3) puntos de daño cortante.',
       },
     ],
   },
@@ -59,6 +61,8 @@ export const wildShapes = [
     hitPoints: '3 (1d6)',
     speed: '10 pies, 60 pies volando',
     skills: 'Percepción +4',
+    resistances: '',
+    languages: '',
     senses: 'Percepción pasiva 14',
     feats: [
       {
@@ -92,6 +96,8 @@ export const wildShapes = [
     hitPoints: '13 (2d10+2)',
     speed: '50 pies',
     skills: '',
+    resistances: '',
+    languages: '',
     senses: 'Percepción pasiva 10',
     feats: [
       {
@@ -132,6 +138,8 @@ export const wildShapes = [
     hitPoints: '42 (5d12+10)',
     speed: '60 pies',
     skills: 'Percepción +4',
+    resistances: '',
+    languages: '',
     senses: 'Percepción pasiva 14',
     feats: [
       {
@@ -171,6 +179,8 @@ export const wildShapes = [
     hitPoints: '51 (6d10+18)',
     speed: '60 pies',
     skills: 'Percepción +5',
+    resistances: '',
+    languages: '',
     senses: 'Percepción pasiva 15',
     feats: [
       {
@@ -194,6 +204,51 @@ export const wildShapes = [
   },
 
   {
+    name: 'Anguila de Relámpago Gigante',
+    size: 'Grande',
+    alignment: 'Cualquiera',
+    imageUrl: 'https://2e.aonprd.com/Images/Monsters/Eel_ElectricEel.png',
+    challengeRating: '3',
+    stats: [
+      { label: 'FUE', value: 10 },
+      { label: 'DES', value: 10 },
+      { label: 'CON', value: 10 },
+      { label: 'INT', value: 10 },
+      { label: 'SAB', value: 10 },
+      { label: 'CAR', value: 10 },
+    ],
+    armorClass: 13,
+    hitPoints: '42 (5d10+15)',
+    speed: '5 pies, nadar 30 pies',
+    skills: 'Percepción +5',
+    resistances: 'Relámpago',
+    languages: '',
+    senses: 'Visión ciega 60 pies, Percepción pasiva 11',
+    feats: [
+      {
+        name: 'Respirar en el agua',
+        description: 'La anguila solo puede respirar bajo el agua.',
+      },
+    ],
+    actions: [
+      {
+        name: 'Ataque Múltiple',
+        description: 'La criatura realiza dos ataques de mordisco.',
+      },
+      {
+        name: 'Mordisco',
+        description:
+          'Ataque con arma cuerpo a cuerpo: +5 a impactar, alcance 5 pies, un objetivo. Impacto: 10 (2d6+3) de daño perforante más 4 (1d8) de daño de relámpago.',
+      },
+      {
+        name: 'Sacudida de relámpago',
+        description:
+          '(Recarga 5-6). Cualquier criatura fuera del agua tocada por la anguila y a 5 pies o menos de ella, o todas las criaturas a 15 pies o menos de la anguila sumergidas en una masa de agua, deben hacer una tirada de salvación de Constitución CD 12. Si la falla, el objetivo recibirá 13 (3d8) de daño de relámpago. Si una criatura recibe cualquier cantidad de este daño, estará aturdida hasta que acabe el siguiente turno de la anguila. Si la supera, el objetivo sufre la mitad de daño y no resulta aturdido.',
+      },
+    ],
+  },
+
+  {
     name: 'Lobo',
     size: 'Mediano',
     alignment: 'No alineado',
@@ -207,10 +262,12 @@ export const wildShapes = [
       { label: 'CAR', value: 6 },
     ],
     armorClass: 13,
-    hitPoints: '11 (2d8 + 2)',
+    hitPoints: '11 (2d8+2)',
     speed: '40 pies',
     senses: 'Percepción pasiva 13',
     skills: 'Percepción +3, Sigilo +4',
+    resistances: '',
+    languages: '',
     imageUrl: 'https://www.dndbeyond.com/avatars/thumbnails/16/482/1000/1000/636376300223855327.jpeg',
     feats: [
       {
@@ -223,7 +280,7 @@ export const wildShapes = [
       {
         name: 'Mordisco',
         description:
-          'Ataque cuerpo a cuerpo con arma: +4 al ataque, alcance 5 pies, un objetivo. Impacto: 7 (2d4 + 2) puntos de daño perforante. Si el objetivo es una criatura, debe superar una tirada de salvación de Fuerza CD 11 o quedar derribado.',
+          'Ataque cuerpo a cuerpo con arma: +4 al ataque, alcance 5 pies, un objetivo. Impacto: 7 (2d4+2) puntos de daño perforante. Si el objetivo es una criatura, debe superar una tirada de salvación de Fuerza CD 11 o quedar derribado.',
       },
     ],
   },
@@ -242,10 +299,12 @@ export const wildShapes = [
       { label: 'CAR', value: 7 },
     ],
     armorClass: 11,
-    hitPoints: '34 (4d10 + 12)',
+    hitPoints: '34 (4d10+12)',
     speed: '40 pies, escalar 30 pies',
     senses: 'Percepción pasiva 13',
     skills: 'Percepción +3',
+    resistances: '',
+    languages: '',
     feats: [],
     actions: [
       {
@@ -255,12 +314,12 @@ export const wildShapes = [
       {
         name: 'Mordisco',
         description:
-          'Ataque cuerpo a cuerpo con arma: +5 al ataque, alcance 5 pies, un objetivo. Impacto: 8 (1d8 + 4) puntos de daño perforante.',
+          'Ataque cuerpo a cuerpo con arma: +5 al ataque, alcance 5 pies, un objetivo. Impacto: 8 (1d8+4) puntos de daño perforante.',
       },
       {
         name: 'Garras',
         description:
-          'Ataque cuerpo a cuerpo con arma: +5 al ataque, alcance 5 pies, un objetivo. Impacto: 11 (2d6 + 4) puntos de daño cortante.',
+          'Ataque cuerpo a cuerpo con arma: +5 al ataque, alcance 5 pies, un objetivo. Impacto: 11 (2d6+4) puntos de daño cortante.',
       },
     ],
   },
