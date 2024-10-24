@@ -11,5 +11,5 @@ export type WildShape = {
   senses: string;
   skills: string;
   feats: { name: string; description: string }[];
-  abilities: { name: string; description: string }[];
+  actions: { name: string; description: string }[];
 };

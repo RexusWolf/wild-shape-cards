@@ -57,11 +57,11 @@ export const CardComponent = ({ card }: { card: WildShape }) => {
             ))}
           </section>
 
-          {card.abilities.map((ability) => (
+          {card.actions.map((action) => (
             <section className={styles.featsSection}>
               <p className={styles.feat}>
-                <span>{ability.name} </span>
-                {ability.description}
+                <span>{action.name} </span>
+                {action.description}
               </p>
             </section>
           ))}
